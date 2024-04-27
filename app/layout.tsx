@@ -1,7 +1,6 @@
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
-import Link from "next/link";
-import AuthButton from "@/components/ui/supabase/AuthButton"; 
+import SearchBar from "@/components/ui/SearchBar";
 
 
 export default function RootLayout({
@@ -12,8 +11,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.className}>
       <body className="bg-background text-foreground">
-        <main className="min-h-screen flex flex-col items-center">
-          <AuthButton />
+        <main className="min-h-screen flex flex-col items-center w-full">
+          <SearchBar />
           {children}
         </main>
       </body>
